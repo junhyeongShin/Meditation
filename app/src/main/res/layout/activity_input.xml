@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".InputActivity"
+        android:orientation="vertical"
+        >
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="           "
+                android:textSize="24sp"
+                />
+
+        <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                >
+
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="New"
+                    android:textSize="24sp"
+                    />
+
+        </LinearLayout>
+
+        <Button
+                android:id="@+id/btn_input"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="24sp"
+                android:text="추가"
+                android:background="@drawable/table_background2"/>
+
+    </LinearLayout>
+
+
+<!--    <LinearLayout-->
+<!--            android:layout_marginTop="10dp"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:orientation="horizontal"-->
+<!--            >-->
+
+<!--        <TextView-->
+<!--                android:layout_weight="1"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="카테고리"-->
+<!--                android:gravity="center"-->
+<!--                android:textSize="24sp"-->
+<!--                android:background="@drawable/table_background2">-->
+
+<!--        </TextView>-->
+
+<!--        <Spinner-->
+<!--                android:id="@+id/category"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:layout_weight="4"-->
+<!--                android:background="@drawable/table_background2">-->
+
+<!--        </Spinner>-->
+
+
+
+<!--    </LinearLayout>-->
+
+    <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/table_background2">
+
+        <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/Title"
+                android:hint="제목"
+                android:textSize="24sp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <LinearLayout
+            android:id="@+id/layout_date_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/table_background2"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="날짜 선택"
+                android:textSize="30sp">
+
+        </TextView>
+        <TextView
+                android:id="@+id/date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="00/00"
+                android:textSize="30sp">
+
+        </TextView>
+
+    </LinearLayout>
+
+    <LinearLayout
+            android:id="@+id/layout_start_time_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/table_background2"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="시작 시간"
+                android:textSize="30sp">
+
+        </TextView>
+        <TextView
+                android:id="@+id/start_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="00:00"
+                android:textSize="30sp">
+
+        </TextView>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+            android:id="@+id/layout_stop_time_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/table_background2"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="종료 시간"
+                android:textSize="30sp">
+
+        </TextView>
+        <TextView
+                android:id="@+id/stop_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="00:00"
+                android:textSize="30sp">
+
+        </TextView>
+
+    </LinearLayout>
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="left|center_vertical"
+            android:background="@drawable/table_background2"
+            android:orientation="vertical">
+
+<!--        <Button-->
+<!--                android:id="@+id/btn_al"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:background="@drawable/table_background2"-->
+<!--                android:text="알림"-->
+<!--                android:textSize="24sp" />-->
+<!--        <TextView-->
+<!--                android:id="@+id/text_al"-->
+<!--                android:gravity="center"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:text="안함"-->
+<!--                android:textSize="24sp" />-->
+
+
+<!--    </LinearLayout>-->
+<!--    <LinearLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginTop="10dp"-->
+<!--            android:gravity="left"-->
+<!--            android:orientation="vertical">-->
+
+
+<!--        <Button-->
+<!--                android:id="@+id/btn_map"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:background="@drawable/table_background2"-->
+<!--                android:text="지도"-->
+<!--                android:textSize="24sp" />-->
+<!--        <TextView-->
+<!--                android:gravity="center"-->
+<!--                android:id="@+id/text_map"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:text="주소"-->
+<!--                android:textSize="24sp" />-->
+
+    </LinearLayout>
+
+
+    <EditText
+            android:id="@+id/editText_input"
+            android:gravity="top"
+            android:layout_width="match_parent"
+            android:layout_height="330dp"
+            android:background="@drawable/table_background2"
+            android:hint="내용"
+            android:textSize="24sp">
+
+
+    </EditText>
+
+
+</LinearLayout>

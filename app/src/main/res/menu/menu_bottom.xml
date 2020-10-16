@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+            android:id="@+id/tab1"
+            app:showAsAction="ifRoom"
+            android:icon="@drawable/home_fill"
+            android:enabled="true"
+            android:checked="true"
+            android:title="리스트"/>
+    <item
+            android:id="@+id/tab2"
+            app:showAsAction="ifRoom"
+            android:icon="@drawable/bright_moon"
+            android:enabled="true"
+            android:title="기록"/>
+    <item
+            android:id="@+id/tab3"
+            app:showAsAction="ifRoom"
+            android:icon="@drawable/happy"
+            android:enabled="true"
+            android:title="더보기"/>
+    <item
+            android:id="@+id/tab4"
+            app:showAsAction="ifRoom"
+            android:icon="@android:drawable/ic_media_play"
+            android:enabled="true"
+            android:title="더보기"/>
+    <item
+            android:id="@+id/tab5"
+            app:showAsAction="ifRoom"
+            android:icon="@android:drawable/ic_menu_search"
+            android:enabled="true"
+            android:title="더보기"/>
+</menu>
